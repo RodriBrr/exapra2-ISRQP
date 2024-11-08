@@ -11,9 +11,28 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h1>Prueba MVC QUINTANA</h1>
+        <h1> RODRIGO QUINTANA PEREZ</h1>
         <hr>
-        <h1>Fecha y hora de sistema : <%= new java.util.Date()%> </h1>
         
+        <div class="container">
+    <div class="jumbotron">
+        <center><h2>Formulario para Gestion Ventas QUINTANA</h2></center>
+        <div class="alert alert-info">
+            <form method="post" action="ventas.jsp">
+                <div class="form-group">
+                    <h3>Nombre producto</h3>
+                    <input type="text" name="nombre" class="form-control" placeholder="Captura Producto" required/>
+                    <h3>Cantidad producto</h3>
+                    <input type="text" name="cantidad" class="form-control" placeholder="Captura Cantidad" required value="0"/>
+                    <h3>Precio producto</h3>
+                    <input type="text" name="precio" class="form-control" placeholder="Captura Precio" required/>
+                    <br><br>
+                    <input type="submit" class="btn btn-primary" value="Calcular Venta"/>
+                    <input type="reset" class="btn btn-danger" value="Limpiar Datos"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
     </body>
 </html>
